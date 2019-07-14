@@ -70,6 +70,7 @@ Most of TinyFlow's code is self-contained.
 ```bash
 export TORCH_HOME=/Users/xiongy/Desktop/github/torch
 export PATH=$TORCH_HOME:$PATH
+```
 - Type ```make```
 - Setup python path to include tinyflow and nnvm
 ```bash
