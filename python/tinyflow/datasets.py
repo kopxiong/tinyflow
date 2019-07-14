@@ -2,7 +2,7 @@
 import numpy as np
 from collections import namedtuple
 from sklearn.datasets import fetch_mldata
-import cPickle
+import pickle
 import sys
 import os
 from subprocess import call
@@ -53,9 +53,9 @@ CIFAR10Data = namedtuple("CIFAR10Data", ["train", "test"])
 def load_batch(fpath, label_key='labels'):
     f = open(fpath, 'rb')
     if sys.version_info < (3,):
-        d = cPickle.load(f)
+        d = pickle.load(f)
     else:
-        d = cPickle.load(f, encoding="bytes")
+        d = pickle.load(f, encoding="bytes")
         # decode utf8
         for k, v in d.items():
             del(d[k])

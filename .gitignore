@@ -36,3 +36,4 @@ cli_test
 *.pyc
 test.*
 log
+.vscode
