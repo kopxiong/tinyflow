@@ -67,6 +67,9 @@ Most of TinyFlow's code is self-contained.
   - For OSX User, please install Torch with Lua 5.1 instead of LuaJIT,
     i.e. ```TORCH_LUA_VERSION=LUA51 ./install.sh```
 - Set up environment variable ```TORCH_HOME``` to root of torch
+```bash
+export TORCH_HOME=/Users/xiongy/Desktop/github/torch
+export PATH=$TORCH_HOME:$PATH
 - Type ```make```
 - Setup python path to include tinyflow and nnvm
 ```bash
